@@ -67,9 +67,9 @@ function Contact(){
                 </form>
             </section>
             <section>
-                <h2 style={{color:'white'}}>Call  us on:📞0110000000
+                <h2 style={{color:'white'}}>Call us📞:0110000000
                     <br />
-                    Whatsapp<FaWhatsapp/>: 0111000000
+                    Message<FaWhatsapp/>: 0111000000
                 </h2>
             </section>
             <section>
