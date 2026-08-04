@@ -1,0 +1,102 @@
+.body{
+    background-image:url('../assets/laptop.jpg');
+    background-position: center;
+    background-size:cover;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 35px;
+}
+.webDev{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 70%,rgba(0,0,0,0) 100%),url('../assets/Web\ development.jpg');
+    background-position: center;
+    background-size:cover;
+    height: 440px;
+    border-radius: 17px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items:center;
+    justify-content:start;
+    padding: 60px;
+}
+.webDev h2{
+    color: #fff;
+    font-size: 39px;
+}
+.phoneFix{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 70%,rgba(0,0,0,0) 100%),url('../assets/Phone\ Fixing.jpg');
+    background-position: center;
+    background-size:cover;
+    height: 440px;
+    border-radius: 17px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items:center;
+    justify-content:start;
+    padding: 60px;
+}
+.phoneFix h2{
+    color: #fff;
+    font-size: 39px;
+}
+.videoEdit{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 70%,rgba(0,0,0,0) 100%),url('../assets/Video\ editing.jpg');
+    background-position: center;
+    background-size:cover;
+    height: 440px;
+    border-radius: 17px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items:center;
+    justify-content:start;
+    padding: 60px;
+}
+.videoEdit h2{
+    color: #fff;
+    font-size: 39px;
+}
+.laptopFix{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 70%,rgba(0,0,0,0) 100%), url('../assets/Laptop\ Fixing.jpg');
+    background-position: center;
+    background-size:cover;
+    height: 440px;
+    border-radius: 17px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items:center;
+    justify-content:start;
+    padding: 60px;
+}
+.laptopFix h2{
+    color: #fff;
+    font-size: 39px;
+}
+.appDev{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 70%,rgba(0,0,0,0) 100%), url('../assets/App\ development.jpg');
+    background-position: center;
+    background-size:cover;
+    height: 440px;
+    border-radius: 17px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items:center;
+    justify-content:start;
+    padding: 60px;
+}
+.appDev h2{
+    color: #fff;
+    font-size: 39px;
+}

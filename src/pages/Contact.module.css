@@ -1,0 +1,72 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    padding: 60px;
+    background:linear-gradient(to right,#000,#333B2D,#fff);
+    min-height: 100vh;
+}
+.body section{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    background-color: #000;
+    width: 540px;
+    height: 540px;
+    margin: 10px;
+    padding:10px;
+    color: white;
+    font-size: 40px;
+    border-radius: 30px; 
+}
+
+.body section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background-color: #000;
+    width: 440px;
+    height: 540px;
+    padding:10px;
+    color: white;
+    font-size: 40px;
+    border-radius: 30px;
+}
+.title{
+    width: 400px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 25px;   
+}
+.userName{
+    width: 400px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 25px;
+}
+.userEmail{
+    width: 400px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 25px;
+}
+.userMessage{
+    border-radius: 19px;
+    font-size: 25px;
+}
+.socialHandles li a{
+    text-decoration: none;
+    color: white;
+}
+.socialHandles{
+    list-style: none;   
+}
+.insta:hover{color: #E1306C;}
+.twitter:hover { color: #1DA1F2; }
+.linkedin:hover { color: #0077B5; }
+.youtube:hover { color: #FF0000; }

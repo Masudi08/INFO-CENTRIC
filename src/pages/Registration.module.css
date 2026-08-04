@@ -1,0 +1,56 @@
+.body{
+    background-image:url('../assets/laptop.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formm{
+    background:linear-gradient(to Bottom Right, #333B2D,#000,#333B2D,#fff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 650px;
+    gap:40px;
+    border-radius: 25px;
+}
+.sect{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  
+}
+.inputWrapper{
+    position: relative;
+    display: flex;
+    align-items:center;
+}
+.inputWrapper input{
+    padding-right:2.5em;
+}
+.eyeIcon{
+    position:absolute;
+    right: 0.95em;
+    cursor: pointer;
+    color: #000;
+}
+.formm h1{
+    color:white;
+}
+.formm button{
+    height: 50px;
+    width: 70px;
+    border-radius:15px;
+}
+.formm button:hover{
+    transform: scale(1.05);
+}
+.errorBox{
+    color:#d01414;
+}

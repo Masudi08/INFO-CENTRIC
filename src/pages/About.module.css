@@ -1,0 +1,30 @@
+.body{
+    background-image: url("../assets/laptop.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color:#000;
+    width: 1070px;
+    opacity:1;
+    height: 640px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.mainn h1{
+    color: black;
+}
+.mainn .logo{
+    font-size: 50px;
+}
