@@ -7,6 +7,7 @@ import Contact from './pages/Contact.jsx'
 import Registration from './pages/Registration.jsx';
 import './App.css';
 import Login from './pages/Login.jsx';
+import ScrollButton from './components/ScrollButton.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Contact' element={<Contact/>}/>
         </Route>
       </Routes>
+      <ScrollButton/>
     </div>
   );
 }
