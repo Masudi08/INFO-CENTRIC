@@ -9,16 +9,18 @@ import './App.css';
 import Login from './pages/Login.jsx';
 import ScrollButton from './components/ScrollButton.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 function App() {
   return (
     <div>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Login/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path='/Registration' element={<Registration/>}/>
         <Route element={<ProtectedRoute/>}>
-          <Route path='/Home' element={<Home/>}/>
           <Route path='/About' element={<About/>}/>
+          <Route path='/Dashboard' element={<Dashboard/>}/>
           <Route path='/Services' element={<Services/>}/>
           <Route path='/Contact' element={<Contact/>}/>
         </Route>

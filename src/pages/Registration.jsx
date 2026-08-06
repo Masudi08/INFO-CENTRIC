@@ -21,7 +21,7 @@ function Registration(){
         if(password===confirmPass){
             const fakeUser={email};
             login(fakeUser);
-            navigate("/Home",{replace:true});
+            navigate("/Dashboard",{replace:true});
             setName('');
             setEmail('');
             setPassword('');

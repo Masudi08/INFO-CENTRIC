@@ -18,7 +18,7 @@ function Login(){
         const fakeUser={email};
         if(email==="masudi@gmail.com"&& password==="masudi"){
             login(fakeUser);
-            navigate("/Home",{replace:true});            
+            navigate("/Dashboard",{replace:true});            
         }else{
             setError("Wrong Email or Password");
         }
