@@ -15,8 +15,9 @@ function Login(){
         e.preventDefault();
         setError("");
         console.log("Submitting email:",email,", Password:",password);
-        const fakeUser={email};
         if(email==="masudi@gmail.com"&& password==="masudi"){
+            const name="Masudi"
+            const fakeUser={email,name};
             login(fakeUser);
             navigate("/Dashboard",{replace:true});            
         }else{

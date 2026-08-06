@@ -19,7 +19,7 @@ function Registration(){
     function handleSubmit(e){
         e.preventDefault();
         if(password===confirmPass){
-            const fakeUser={email};
+            const fakeUser={email,name};
             login(fakeUser);
             navigate("/Dashboard",{replace:true});
             setName('');
