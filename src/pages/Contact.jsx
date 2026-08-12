@@ -8,8 +8,10 @@ function Contact(){
     const[userEmail,setEmail]=useState('');
     const[userMessage,setMessage]=useState('');
     const[title,setTitle]=useState('');
+    const[isSending,setIsSending]=useState(false);
     const handleSubmit=(e)=>{
         e.preventDefault();
+        setIsSending(true);
         emailjs.sendForm(
             'service_wrvnxmr',
             'template_w32jliv',
@@ -21,7 +23,12 @@ function Contact(){
             setEmail('');
             setMessage('');
             setTitle('');
-        }).catch((err)=>console.error(err));
+        }).catch((err)=>{
+            console.error(err);
+            alert("Something went wrong. Please try again.");
+        }).finally(()=>{
+            setIsSending(false);
+        });
     };
     return(
         <div className={styles.body}>
@@ -63,7 +70,8 @@ function Contact(){
                         onChange={(e)=>{setMessage(e.target.value)}} 
                         required
                     />
-                    <button type='submit'>Send</button>
+                    {!isSending?<button type='submit'>Send</button>:<button type='button'>Sending....</button>}
+                    
                 </form>
             </section>
             <section>

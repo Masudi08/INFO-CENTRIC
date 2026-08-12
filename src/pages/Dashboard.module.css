@@ -5,20 +5,33 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: top;
+    justify-content: center;
     gap:30px
 }
-.body h1{
+.bodyy{
+    background: radial-gradient(circle at center,#333B2D,#000);
+    min-height: 150vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    gap:30px
+}
+.bodyy h1{
     font-size: 32px;
     color: #fff;
 }
-.body header{
+.bodyy header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100px;
 }
-.body main{
+.bodyy main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 100%;
@@ -88,14 +101,21 @@
 .videoEdit:hover{
     transform: scale(1.07);
 }
-.body footer{
+.headerArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:450px; 
+}
+footer{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     min-height: 100px;
 }
-.body footer form{
+footer form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,4 +150,43 @@
 .userMessage{
     border-radius: 19px;
     font-size: 25px;
+}
+.profileTab{
+    background-color: #fff;
+    color:black;
+    width: 350px;
+    height: 520px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: top;
+    padding: 7px;
+}
+.profileTop{
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    width: 350px;
+    height:350px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileBottom{
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    width: 350px;
+    height:150px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileBottom ul li {
+    text-decoration: none;
+    color: white;
 }
