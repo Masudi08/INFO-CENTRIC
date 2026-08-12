@@ -7,12 +7,14 @@ export default function Dashboard(){
     const[userName,setName]=useState('');
     const[userEmail,setEmail]=useState('');
     const[userMessage,setMessage]=useState('');
+    const[isSending,setIsSending]=useState(false)
     const[title,setTitle]=useState('');
     const[profileOpen,setProfileOpen]=useState(false);
     const {user}=useAuth();
     const {logout}=useAuth();
     const handleSubmit=(e)=>{
         e.preventDefault();
+        setIsSending(true);
         emailjs.sendForm(
             'service_wrvnxmr',
             'template_w32jliv',
@@ -24,6 +26,7 @@ export default function Dashboard(){
             setEmail('');
             setMessage('');
             setTitle('');
+            setIsSending(false);
         }).catch((err)=>console.error(err));
     }
     return(
@@ -35,7 +38,8 @@ export default function Dashboard(){
                             <div>
                                 <h1>Welcome {user.name}</h1>
                                 <p>
-                                    Which service do you need today?
+                                    Which service do you need today?<br />
+                                    Visit the services page for more info
                                 </p>
                             </div>
                             
@@ -126,7 +130,7 @@ export default function Dashboard(){
                         onChange={(e)=>{setMessage(e.target.value)}} 
                         required
                     />
-                    <button type='submit'>Send</button>
+                    {!isSending?<button type='submit'>Send</button>:<button type="button">Sending...</button>}
                 </form>
             </footer>
     </div>

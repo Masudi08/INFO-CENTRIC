@@ -155,11 +155,11 @@ footer form{
     background-color: #fff;
     color:black;
     width: 350px;
-    height: 520px;
+    height: 505px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 7px;
     align-items: center;
     justify-content: top;
     padding: 7px;

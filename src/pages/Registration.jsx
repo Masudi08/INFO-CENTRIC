@@ -1,9 +1,10 @@
 import styles from './Registration.module.css'
 import { useState } from 'react';
-import { replace, useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import {Country} from 'country-state-city'
 import {FaEye,FaEyeSlash} from 'react-icons/fa';
+
 function Registration(){
     const[name,setName]=useState('');
     const[email,setEmail]=useState('');
@@ -16,12 +17,18 @@ function Registration(){
     const[error,setError]=useState('');
     const {login}=useAuth();
     const navigate=useNavigate();
+    const location=useLocation();
+
+    // Where the user was headed before being redirected here.
+    // Falls back to Dashboard if they landed on Signup directly.
+    const from = location.state?.from?.pathname || "/Dashboard";
+
     function handleSubmit(e){
         e.preventDefault();
         if(password===confirmPass){
             const fakeUser={email,name};
             login(fakeUser);
-            navigate("/Dashboard",{replace:true});
+            navigate(from, {replace:true});
             setName('');
             setEmail('');
             setPassword('');

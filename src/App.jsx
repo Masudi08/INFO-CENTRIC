@@ -10,7 +10,6 @@ import Login from './pages/Login.jsx';
 import ScrollButton from './components/ScrollButton.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Dashboard from './pages/Dashboard.jsx';
-import Profile from './pages/Profile.jsx';
 function App() {
   return (
     <div>
@@ -24,7 +23,6 @@ function App() {
           <Route path='/Dashboard' element={<Dashboard/>}/>
           <Route path='/Services' element={<Services/>}/>
           <Route path='/Contact' element={<Contact/>}/>
-          <Route path='/Profile' element={<Profile/>}/>
         </Route>
       </Routes>
       <ScrollButton/>
