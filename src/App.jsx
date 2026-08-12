@@ -10,11 +10,13 @@ import Login from './pages/Login.jsx';
 import ScrollButton from './components/ScrollButton.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+import PageNotFound from './pages/PageNotFound.jsx';
 function App() {
   return (
     <div>
       <Navbar/>
       <Routes>
+        <Route path='*' element={<PageNotFound/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path='/Registration' element={<Registration/>}/>
@@ -23,6 +25,7 @@ function App() {
           <Route path='/Dashboard' element={<Dashboard/>}/>
           <Route path='/Services' element={<Services/>}/>
           <Route path='/Contact' element={<Contact/>}/>
+          <Route path='*' element={<PageNotFound/>}/>
         </Route>
       </Routes>
       <ScrollButton/>

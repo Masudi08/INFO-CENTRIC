@@ -38,8 +38,7 @@ export default function Dashboard(){
                             <div>
                                 <h1>Welcome {user.name}</h1>
                                 <p>
-                                    Which service do you need today?<br />
-                                    Visit the services page for more info
+                                    Which service do you need today?   <span>Visit the services page for more info</span>
                                 </p>
                             </div>
                             
@@ -133,6 +132,6 @@ export default function Dashboard(){
                     {!isSending?<button type='submit'>Send</button>:<button type="button">Sending...</button>}
                 </form>
             </footer>
-    </div>
+        </div>
     );
 }

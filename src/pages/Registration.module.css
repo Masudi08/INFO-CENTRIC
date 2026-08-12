@@ -23,8 +23,7 @@
 .sect{
     display: flex;
     flex-direction: row;
-    gap: 35px;
-  
+    gap: 35px;  
 }
 .inputWrapper{
     position: relative;

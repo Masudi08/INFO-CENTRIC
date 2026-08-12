@@ -24,7 +24,7 @@ function Login(){
             setError("Wrong Email or Password");
         }
         setEmail("");
-        setPassword("");
+        setPassword("");    
     }
     return(
         <div className={styles.logBody}>
