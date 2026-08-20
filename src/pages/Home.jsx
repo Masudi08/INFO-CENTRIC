@@ -53,14 +53,7 @@ function Home(){
                     </div>
                 </div>
             </main>
-            <section className={styles.credentials}>
-                <ul>
-                    <li><NavLink to='/login'>Log in</NavLink></li>
-                </ul>
-                <ul>
-                    <li><NavLink to='/Registration'>Sign up</NavLink></li>
-                </ul>
-            </section>
+
             <footer className={styles.footer}>
                 <section>
                     <h2>Contact Info:</h2>

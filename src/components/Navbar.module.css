@@ -27,18 +27,11 @@
 .navbarLogo {
   font-weight: bold;
   font-size: 1.5rem;
+  color: #fff;
+  font-size: 60px;
 }
 .navbarLogo:hover{
   cursor: none;
-}
-.navbarLogo span{
-  display: inline-block;
-  transition: animation 0.7s ease-in-out;
-}
-.navbarLogo span:hover{
-  animation: jump 0.7s ease-in-out infinite;
-  cursor: none;
-  color: #fff;
 }
 
 .navbarLinks {

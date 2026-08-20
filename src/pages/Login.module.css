@@ -33,6 +33,7 @@
 }
 .inputWrapper input{
     padding-right: 2.5em;
+    width: 30px;
 }
 .eyeIcon{
     position: absolute;
@@ -41,7 +42,7 @@
 }
 .inputField{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;

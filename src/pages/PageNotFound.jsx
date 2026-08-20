@@ -4,7 +4,7 @@ function PageNotFound(){
         <div className={styles.body}>
             <h1>404 error</h1>
             <h2>Page not found.</h2>
-            <h3>This page may have been removed or it never existed.</h3>
+            <h3>This page may have been removed or it doesn't exist.</h3>
         </div>
     );
 }

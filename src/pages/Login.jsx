@@ -42,6 +42,7 @@ function Login(){
                         value={email}
                         onChange={(e)=>setEmail(e.target.value)}
                         onFocus={()=>(setError(''))}
+                        style={{width:'202px'}}
                     />
                     <br />
                 </div>
@@ -56,6 +57,7 @@ function Login(){
                             onChange={(e)=>setPassword(e.target.value)}
                             onFocus={()=>{setError('')}}
                             required
+                            style={{width:'170px'}}
                         />
                         <span className={styles.eyeIcon} onClick={(e)=>{setShowPass(!showPass)}}>
                             {showPass?<FaEye/>:<FaEyeSlash/>}

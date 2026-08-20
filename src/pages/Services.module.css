@@ -1,5 +1,5 @@
 .body{
-    background-image:url('../assets/laptop.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../assets/laptop.jpg');
     background-position: center;
     background-size:cover;
     min-height:100vh;
