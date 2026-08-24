@@ -36,12 +36,14 @@ export default function Dashboard(){
                     <header>
                         <div className={styles.headerArea}>
                             <div>
-                                <h1>Welcome {user.name}</h1>
+                                <h1>Welcome {user.username}</h1>
                                 <p>
                                     Which service do you need today?   <span>Visit the services page for more info</span>
                                 </p>
                             </div>
-                            
+                            <div style={{backgroundColor:'#333',borderRadius:'10px',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                                <NavLink to={'/Guestbook'}style={{textDecoration:'none',color:'#fff'}}>View guest book</NavLink>
+                            </div>
                             <button 
                                 onClick={()=>setProfileOpen(!profileOpen)}
                                 style={
@@ -72,11 +74,11 @@ export default function Dashboard(){
                         <section className={styles.profileTop}>
                             <div
                                 style={{width:"70px",height:'70px',borderRadius:"35px",fontSize:'30px',backgroundColor:"green",display:'flex',alignItems:'center',justifyContent:'center'}}
-                                >{user.name[0]}
+                                >{user.username[0]}
                             </div>
                             <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>{user.name}</div>
                             <br/>
-                            ----{user.email}----
+                            ----{user.username}----
                         </section>
                         <section className={styles.profileBottom}>
                             <ul style={{listStyle:"none"}}>

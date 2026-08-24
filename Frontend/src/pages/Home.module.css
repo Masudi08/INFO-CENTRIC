@@ -54,6 +54,7 @@
   border-radius: 12px;
   z-index:1;
   height: 500px;
+  background: none;
 }
 .card{
   flex: 0 0 20em;

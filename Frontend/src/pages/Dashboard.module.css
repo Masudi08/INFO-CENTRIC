@@ -106,7 +106,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap:450px; 
+    gap:400px; 
 }
 footer{
     display: flex;

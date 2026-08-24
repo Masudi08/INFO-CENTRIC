@@ -11,6 +11,7 @@ import ScrollButton from './components/ScrollButton.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import PageNotFound from './pages/PageNotFound.jsx';
+import Guestbook from './components/Guestbook.jsx';
 function App() {
   return (
     <div>
@@ -26,6 +27,7 @@ function App() {
           <Route path='/Services' element={<Services/>}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='*' element={<PageNotFound/>}/>
+          <Route path='/Guestbook' element={<Guestbook/>}/>
         </Route>
       </Routes>
       <ScrollButton/>
